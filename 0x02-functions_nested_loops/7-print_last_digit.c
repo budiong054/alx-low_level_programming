@@ -2,14 +2,23 @@
 
 /**
  * print_last_digit - prints the last digit of a number
- * @num1: number to print its last digit
+ * @num: number to print its last digit
  * Return: the last digit
  */
 
-int print_last_digit(int num1)
+int print_last_digit(int num)
 {
 	int rem;
 
-	rem = num1 % 10;
+	if (num < 0)
+	{
+		num = -num;
+	}
+	else
+	{
+		num = num;
+	}
+	rem = num % 10;
+	_putchar(rem + '0');
 	return (rem);
 }
