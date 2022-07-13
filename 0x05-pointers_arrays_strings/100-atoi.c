@@ -25,6 +25,8 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
+			if (neg % 2 == 1)
+				digit = -digit;
 			numbers = numbers * 10 + digit;
 			flag = 1;
 
@@ -33,10 +35,6 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-
-	if (neg % 2 == 1)
-		numbers = -numbers;
-
 
 	if (flag == 1)
 		return (numbers);
