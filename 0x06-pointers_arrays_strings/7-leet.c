@@ -14,7 +14,7 @@
 char *leet(char *str)
 {
 	int i, j;
-	char alp[5][2] = {{'a', 'A'}, {'e', 'E'}, 
+	char alp[5][2] = {{'a', 'A'}, {'e', 'E'},
 		{'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
 	char cod[5] = {'4', '3', '0', '7', '1'};
 
