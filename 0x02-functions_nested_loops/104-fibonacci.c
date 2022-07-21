@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	unsigned int f1, f2, f3;
+	long int f1, f2, f3;
 
 	f1 = 1;
 	f2 = 2;
@@ -17,13 +17,13 @@ int main(void)
 	for (i = 1; i <= 98; i++)
 	{
 		if (i == 1)
-			printf("%u", f1);
+			printf("%lu", f1);
 		else if (i == 2)
-			printf(", %u", f2);
+			printf(", %lu", f2);
 		else
 		{
 			f3 = f1 + f2;
-			printf(", %u", f3);
+			printf(", %lu", f3);
 			f1 = f2;
 			f2 = f3;
 		}
