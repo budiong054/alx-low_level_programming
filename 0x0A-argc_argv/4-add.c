@@ -8,24 +8,30 @@
  * Return: 0 if successful, otherwise return 1
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i, add;
+	int i, j, k;
+	int add;
+
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+	}
 
 	if (argc == 1)
 		printf("0\n");
 	else
 	{
 		add = 0;
-		for (i = 1; i < argc; i++)
-		{
-			if (**(argv + i) < '0' || **(argv + i) > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			add += atoi(*(argv + i));
-		}
+		for (k = 1; k < argc; k++)
+			add += atoi(argv[k]);
 		printf("%d\n", add);
 	}
 	return (0);
