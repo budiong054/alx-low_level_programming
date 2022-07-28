@@ -68,7 +68,7 @@ char **strtow(char *str)
 			i++;
 			j++;
 		}
-		
+
 		if (j  > 0)
 		{
 			buffer[j] = '\0';
