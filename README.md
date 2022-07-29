@@ -6,15 +6,11 @@ At [ALX SE](https://www.alxafrica.com/), we learn by doing. We have projects eve
 ### Table of contents
 ---
 | **Directories** | **Description**|
-| --- | --- |
+ --- | --- 
 | [0x00-hello\_world](https://github.com/budiong054/alx-low_level_programming/tree/master/0x00-hello_world) | Introduction to the basics of C programming language |
-| --- | --- |
 | [0x01-variables\_if\_else\_while](https://github.com/budiong054/alx-low_level_programming/tree/master/0x01-variables_if_else_while) | Introduction to C variables, flow statements and loops |
-| --- | --- |
-| [0x02-functions\_nested\_loops](https://github.com/budiong054/alx-low_level_programming/tree/master/0x02-functions_nested_loops) | Introduction to functions in C and neseted loops |
-| --- | --- |
+| [0x02-functions\_nested\_loops](https://github.com/budiong054/alx-low_level_programming/tree/master/0x02-functions_nested_loops) | Introduction to functions in C and nested loops |
 | [0x03-debugging](https://github.com/budiong054/alx-low_level_programming/tree/master/0x03-debugging) | Introduction to debugging |
-| --- | --- |
 
 ### Author
 
