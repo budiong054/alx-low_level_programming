@@ -4,7 +4,6 @@
 At [ALX SE](https://www.alxafrica.com/), we learn by doing. We have projects everyday that we have to push on GitHub in order for an automatic review to be done. This repository contains directories each corresponding to a low level programming project. These projects are part of the ALX SE foundational curriculum. In these projects, we cover everything from the basics of C Programming, variables, flow statements, loops, functions, pointers, recursion, static libraries, dynamic allocation of memory to more advanced topics.
 
 ### Table of contents
----
 | **Directories** | **Description**|
  --- | --- 
 | [0x00-hello\_world](https://github.com/budiong054/alx-low_level_programming/tree/master/0x00-hello_world) | Introduction to the basics of C programming language |
