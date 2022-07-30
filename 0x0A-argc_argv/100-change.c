@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
 	int i, cent, num;
-	
+
 	if (argc - 1 != 1)
 	{
 		printf("Error\n");
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
+
 	num = 0;
 	for (i = 0; i < 5 && cent >= 0; i++)
 	{
