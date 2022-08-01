@@ -3,11 +3,11 @@
 
 /**
  * struct dog - information about a dog
- * @name: name of the dog
- * age: age of the dog
- * owner: owner of the dog
+ * @name: First member
+ * age: Second member
+ * owner: Third member
  *
- * Description: This a structure of a dog
+ * Description: Longer description
  */
 
 struct dog
@@ -17,4 +17,8 @@ struct dog
 	char *owner;
 };
 
-#endif /* DOG_H */
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
+#endif
