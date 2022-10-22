@@ -89,23 +89,22 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		temp = ht->shead;
 		while (temp)
 		{
-			if (ascii_value(new_node->key) < ascii_value(temp->key))
+			if (strcmp(new_node->key, temp->key) < 0)
 			{
 				new_node->snext = temp;
 				temp->sprev = new_node;
 				ht->shead = new_node;
 				return (1);
 			}
-			else if ((ascii_value(new_node->key) > ascii_value(temp->key)) &&
-					(temp->snext == NULL))
+			else if (strcmp(new_node->key, temp->key) > 0 && !temp->snext)
 			{
 				new_node->sprev = temp;
 				temp->snext = new_node;
 				ht->stail = new_node;
 				return (1);
 			}
-			else if ((ascii_value(new_node->key) > ascii_value(temp->key)) &&
-					(ascii_value(new_node->key) < ascii_value(temp->snext->key)))
+			else if (strcmp(new_node->key, temp->key) > 0 &&
+					strcmp(new_node->key, temp->snext->key) < 0)
 			{
 				new_node->snext = temp->snext;
 				new_node->sprev = temp;
@@ -120,25 +119,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	return (1);
 }
 
-/**
- * ascii_value - return the ascii value of a string
- * @str: The string
- *
- * Return: The sum of their ascii value
- */
-
-unsigned long int ascii_value(char *str)
-{
-	int c;
-	unsigned long int ascii = 0;
-
-	while ((c = *str++))
-	{
-		ascii = ascii + c;
-	}
-
-	return (ascii);
-}
 
 /**
  * shash_table_get - retrives the value associated with the key
