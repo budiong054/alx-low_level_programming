@@ -5,10 +5,8 @@ NAME = school
 RM = rm
 
 all: ${OBJ}
+	${%.o: %.c}
 	${CC} ${OBJ} -o ${NAME}
-
-%.o: %.c
-	${CC} -c -o $@ $<
 
 clean:
 	${RM} -f *~ ${NAME}
