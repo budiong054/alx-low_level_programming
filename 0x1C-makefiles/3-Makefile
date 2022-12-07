@@ -1,3 +1,5 @@
+.PHONY: all clean oclean fclean
+
 CC = gcc
 SRC = main.c school.c
 OBJ := $(SRC:%.c=%.o)
