@@ -1,10 +1,10 @@
 .PHONY: all clean oclean fclean re
 
-CC := gcc
-SRC := $(wildcard *.c)
+CC = gcc
+SRC = $(wildcard *.c)
 OBJ := $(SRC:%.c=%.o)
-NAME := school
-CFLAGS := -Wall -Werror -Wextra -pedantic
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: ${OBJ}
 	$(%.o: %.c)
